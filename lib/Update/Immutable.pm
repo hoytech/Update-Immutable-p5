@@ -4,6 +4,10 @@ use common::sense;
 
 our $VERSION = '0.100';
 
+require Exporter;
+our @ISA = qw(Exporter);
+our @EXPORT_OK = qw(update);
+
 
 ## A perl implementation of the update shipped with react, plus an $unset command, "correct" unshift ordering, and auto-vivification
 ## https://facebook.github.io/react/docs/update.html
